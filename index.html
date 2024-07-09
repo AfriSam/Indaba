@@ -1,0 +1,45 @@
+
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <meta charset="utf-8">
+            <title>AfriSam Indaba - Issue 5 2024</title>
+            <style type="text/css">
+              body {
+                  margin: 0;
+                  padding: 0;
+              }
+              .solid-container {
+                height: 100vh;
+              }
+            </style>
+          </head>
+          <body>
+          
+          		<!-- OPTION 1: To create 3D FlipBook from PDF 
+          		<div class="flip-book-container solid-container" src="src/XXX-AfriSam-Indaba-XXX.pdf">
+
+        		</div>
+        		-->
+        		
+        		 <!-- OPTION 2: To create 3D FlipBook from PDF -->
+        		<div class="solid-container">
+
+       			</div>
+       			
+          
+                <script src="js/jquery.min.js"></script>
+       			<script src="js/html2canvas.min.js"></script>
+        		<script src="js/three.min.js"></script>
+        		<script src="js/pdf.min.js"></script>
+
+        		<script src="js/3dflipbook.min.js"></script>
+        		
+        		<!-- OPTION 2: To create 3D FlipBook from PDF -->
+        		<script type="text/javascript">
+          		$('.solid-container').FlipBook({pdf: 'src/Indaba-Issue-5-2024.pdf'});
+        		</script>
+        		
+
+          </body>
+        </html>
