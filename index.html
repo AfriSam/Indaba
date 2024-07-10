@@ -1,42 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AfriSam Indaba - Issue 5 2024</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="sample-container-box">
+  <div class="sample-container">
 
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <meta charset="utf-8">
-            <title>AfriSam Indaba - Issue 5 2024</title>
-            <style type="text/css">
-              body {
-                  margin: 0;
-                  padding: 0;
-              }
-              .solid-container {
-                height: 100vh;
-              }
-            </style>
-          </head>
-          <body>
-          
-          		<!--- <div class="flip-book-container solid-container" src="src/indaba-issue-5-2024.pdf">
+  </div>
+</div>
 
-        		</div>
-        		--->
-        		
-        		<div class="solid-container">
 
-       			</div>
-       		
-          
-                <script src="js/jquery.min.js"></script>
-       			<script src="js/html2canvas.min.js"></script>
-        		<script src="js/three.min.js"></script>
-        		<script src="js/pdf.min.js"></script>
 
-        		<script src="js/3dflipbook.min.js"></script>
-        		
-        		<script type="text/javascript">
-          		$('.solid-container').FlipBook({pdf: 'src/indaba-issue-5-2024.pdf'});
-        		</script>
-        		
+<script src="js/three.min.js"></script>
+<script src="js/pdf.min.js"></script>
 
-          </body>
-        </html>
+<script type="text/javascript">
+  window.PDFJS_LOCALE = {
+    pdfJsWorker: 'js/pdf.worker.js',
+    pdfJsCMapUrl: 'cmaps'
+  };
+</script>
+<script src="js/3dflipbook.min.js"></script>
+
+<script type="text/javascript">
+  $('.sample-container').FlipBook({
+    pdf: 'src/Indaba-Issue-5-2024.pdf',
+    template: {"html":"templates\/default-book-view.html","styles":["css\/font-awesome.min.css","css\/short-black-book-view.css"],"script":"js\/default-book-view.js","sounds":{"startFlip":"sounds\/start-flip.mp3","endFlip":"sounds\/end-flip.mp3"}}  });
+</script>
+</body>
+</html>
